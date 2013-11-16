@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252DDA3418370C5F00FED581 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 252DDA3318370C5F00FED581 /* block.png */; };
 		2555A19A183698ED0067BAE9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2555A198183698ED0067BAE9 /* icon.png */; };
 		2555A19B183698ED0067BAE9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2555A199183698ED0067BAE9 /* icon@2x.png */; };
 		25789A4B1832D57E004F0806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25789A4A1832D57E004F0806 /* Foundation.framework */; };
@@ -30,8 +31,6 @@
 		25FB7CD718331456009BFECA /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FB7CD518331456009BFECA /* ball@2x.png */; };
 		25FB7CDA18331672009BFECA /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FB7CD818331672009BFECA /* paddle.png */; };
 		25FB7CDB18331672009BFECA /* paddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FB7CD918331672009BFECA /* paddle@2x.png */; };
-		25FB7D2A18342A75009BFECA /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FB7D2818342A75009BFECA /* block.png */; };
-		25FB7D2B18342A75009BFECA /* block@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FB7D2918342A75009BFECA /* block@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252DDA3318370C5F00FED581 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		2555A198183698ED0067BAE9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2555A199183698ED0067BAE9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		25789A471832D57E004F0806 /* BrickBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,8 +76,6 @@
 		25FB7CD518331456009BFECA /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
 		25FB7CD818331672009BFECA /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
 		25FB7CD918331672009BFECA /* paddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paddle@2x.png"; sourceTree = "<group>"; };
-		25FB7D2818342A75009BFECA /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
-		25FB7D2918342A75009BFECA /* block@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				2555A198183698ED0067BAE9 /* icon.png */,
+				252DDA3318370C5F00FED581 /* block.png */,
 				2555A199183698ED0067BAE9 /* icon@2x.png */,
-				25FB7D2818342A75009BFECA /* block.png */,
-				25FB7D2918342A75009BFECA /* block@2x.png */,
 				25FB7CD418331456009BFECA /* ball.png */,
 				25FB7CD518331456009BFECA /* ball@2x.png */,
 				25FB7CD818331672009BFECA /* paddle.png */,
@@ -270,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				25789A571832D57E004F0806 /* InfoPlist.strings in Resources */,
-				25FB7D2B18342A75009BFECA /* block@2x.png in Resources */,
 				25FB7CDA18331672009BFECA /* paddle.png in Resources */,
 				25789A6A1832D57E004F0806 /* Images.xcassets in Resources */,
 				25FB7CDB18331672009BFECA /* paddle@2x.png in Resources */,
@@ -278,8 +274,8 @@
 				2555A19A183698ED0067BAE9 /* icon.png in Resources */,
 				25FB7CD618331456009BFECA /* ball.png in Resources */,
 				25789A601832D57E004F0806 /* Main.storyboard in Resources */,
-				25FB7D2A18342A75009BFECA /* block.png in Resources */,
 				2555A19B183698ED0067BAE9 /* icon@2x.png in Resources */,
+				252DDA3418370C5F00FED581 /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

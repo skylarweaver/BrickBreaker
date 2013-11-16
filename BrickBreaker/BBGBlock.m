@@ -15,8 +15,8 @@
 {
   if (self = [super initWithImageNamed:@"block"]) {
     self.colorBlendFactor = 0.7;
-    self.color = color;
     self.size = size;
+    self.color = color;
     self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.size];
     self.physicsBody.categoryBitMask = blockCategory;
     self.physicsBody.contactTestBitMask = ballCategory;

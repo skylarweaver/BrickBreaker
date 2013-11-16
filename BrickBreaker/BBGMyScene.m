@@ -141,7 +141,12 @@ CGPoint CGRectGetCenter(CGRect rect) {
   CGPoint location = [touch locationInNode:self];
   [self movePaddleToPoint:location];
   if (!self.ballIsMoving) {
-    [self.ball.physicsBody applyImpulse:CGVectorMake(0.05, -2)];
+    // randomize which way the ball goes initially
+    CGFloat randomXOffset = ((CGFloat) random() / (CGFloat)RAND_MAX) / 1.5;
+    if (arc4random() % 2 == 0) {
+      randomXOffset *= -1.0;
+    }
+    [self.ball.physicsBody applyImpulse:CGVectorMake(randomXOffset, -2)];
     self.ballIsMoving = YES;
   }
 }
@@ -242,7 +247,7 @@ CGPoint CGRectGetCenter(CGRect rect) {
 {
   [block removeFromParent];
   self.score++;
-  self.scoreLabel.text = [NSString stringWithFormat:@"Score: %03u", self.score];
+  self.scoreLabel.text = [NSString stringWithFormat:@"Score: %03ld", (long)self.score];
 }
 
 - (void)update:(CFTimeInterval)currentTime
@@ -255,7 +260,7 @@ CGPoint CGRectGetCenter(CGRect rect) {
     centerPoint.y = self.paddle.size.height / 2.0;
     self.paddle.position = centerPoint;
     self.numberOfLives--;
-    self.livesLabel.text = [NSString stringWithFormat:@"Lives: %01u", self.numberOfLives];
+    self.livesLabel.text = [NSString stringWithFormat:@"Lives: %01ld", (long)self.numberOfLives];
   }
 }
 
